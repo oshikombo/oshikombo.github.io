@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WETU STUDIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>WELCOME TO WETU STUDIO MUSIC VENUE BOOKING SITE</h1>
+    <form id="bookingForm">
+        <label for="venue">Select Venue:</label>
+        <select id="venue" name="venue">
+            <option value="venue1">Venue 1</option>
+            <option value="venue2">Venue 2</option>
+            <!-- Add more venues as needed -->
+        </select>
+
+        <label for="artist">Select Artist:</label>
+        <select id="artist" name="artist">
+            <option value="artist1">Artist 1</option>
+            <option value="artist2">Artist 2</option>
+            <!-- Add more artists as needed -->
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date">
+
+        <button type="button" onclick="submitBooking()">Book Now</button>
+    </form>
+
+    <div id="confirmationMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
